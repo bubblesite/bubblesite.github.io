@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
-<center><img src="woinpro.jpg" style="height: 100%;"></center>
+<img src="woinpro.jpg" name="myImage" onload="onResize();">
+<script>
+window.onresize = onResize;
+
+function onResize(e){
+    var img = var img = document.images.myImage;
+    if ( img.width > img.height )
+        img.width = window.innerWidth
+    else
+        img.height = window.innerHeight;
+}
+</script>
 </body>
 </html>
