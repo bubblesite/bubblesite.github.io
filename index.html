@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-<body style="margin: 0px;">
+<body style="margin: 0px;" oncontextmenu="return false;">
 <img src="woinpro.jpg" name="myImage" onload="onResize();">
 <script>
 window.onresize = onResize;
+
 function onResize(e){
-    var img = var img = document.images.myImage;
+    var img = document.images.myImage;
     if ( img.width > img.height )
         img.width = window.innerWidth
     else
